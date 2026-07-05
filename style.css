@@ -94,6 +94,10 @@ body {
     font-weight: 600;
     font-size: 0.95rem;
 }
+/* Languages */
+.indent {
+    margin-left: 20px;
+}
 
 /* ===== PROJECTS ===== */
 .project-item {
