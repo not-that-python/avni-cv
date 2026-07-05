@@ -1,0 +1,1 @@
+change from page to tabs that can be clicked
