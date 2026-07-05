@@ -1,21 +1,255 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { 
-    font-family: Arial, sans-serif; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    height: 100vh; 
-    background: #f5f5f5;
+/* ===== RESET & BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.container { text-align: center; padding: 2rem; }
-h1 { font-size: 3rem; margin-bottom: 1rem; color: #333; }
-p { font-size: 1.2rem; color: #666; }
-.coming-soon { 
-    display: inline-block; 
-    margin-top: 2rem;
-    padding: 0.8rem 2rem;
-    background: #007bff;
-    color: white;
-    border-radius: 5px;
-    font-weight: bold;
+
+body {
+    background: #f9fafb;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    color: #111827;
+    padding: 2rem 1rem;
+    line-height: 1.6;
+}
+
+/* ===== CV CONTAINER ===== */
+.cv-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 2.5rem 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== HEADER ===== */
+.header {
+    text-align: center;
+    border-bottom: 3px solid #e5e7eb;
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #1d4ed8;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.5px;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    color: #6b7280;
+    font-size: 0.95rem;
+}
+
+/* ===== SECTIONS ===== */
+.section {
+    margin-bottom: 2rem;
+}
+
+.section h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #1d4ed8;
+    border-bottom: 2px solid #bfdbfe;
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+/* ===== EDUCATION ===== */
+.education-item {
+    margin-bottom: 0.8rem;
+}
+
+.education-item h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.education-item p {
+    color: #374151;
+}
+
+/* ===== SKILLS LIST ===== */
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    padding: 0;
+}
+
+.skills-list li {
+    background: #eff6ff;
+    color: #1d4ed8;
+    padding: 0.3rem 1.2rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+/* ===== PROJECTS ===== */
+.project-item {
+    margin-bottom: 1.2rem;
+}
+
+.project-item h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.project-item p {
+    color: #374151;
+    margin-top: 0.1rem;
+}
+
+.project-item ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    color: #374151;
+    margin-top: 0.2rem;
+}
+
+.project-item ul li {
+    margin-bottom: 0.2rem;
+}
+
+.project-item a {
+    color: #1d4ed8;
+    text-decoration: none;
+}
+
+.project-item a:hover {
+    text-decoration: underline;
+}
+
+/* ===== WORK EXPERIENCE ===== */
+.experience-item {
+    margin-bottom: 1.2rem;
+}
+
+.experience-item h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.experience-item p {
+    color: #374151;
+}
+
+/* ===== OUTREACH ===== */
+.outreach-item {
+    margin-bottom: 1.2rem;
+}
+
+.outreach-item h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.outreach-item p {
+    color: #374151;
+}
+
+.outreach-item ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    color: #374151;
+    margin-top: 0.2rem;
+}
+
+.outreach-item ul li {
+    margin-bottom: 0.1rem;
+}
+
+.outreach-item a {
+    color: #1d4ed8;
+    text-decoration: none;
+}
+
+.outreach-item a:hover {
+    text-decoration: underline;
+}
+
+/* ===== EXTRACURRICULARS ===== */
+.extracurricular-item {
+    margin-bottom: 1rem;
+}
+
+.extracurricular-item h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.extracurricular-item p {
+    color: #374151;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 640px) {
+    .cv-container {
+        padding: 1.5rem 1.2rem;
+        border-radius: 8px;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .contact-info {
+        gap: 0.8rem;
+        font-size: 0.85rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section h2 {
+        font-size: 1.3rem;
+    }
+
+    .skills-list {
+        gap: 0.5rem;
+    }
+
+    .skills-list li {
+        font-size: 0.85rem;
+        padding: 0.2rem 0.8rem;
+    }
+
+    body {
+        padding: 1rem 0.5rem;
+    }
+}
+
+/* ===== PRINT ===== */
+@media print {
+    body {
+        background: white;
+        padding: 0;
+    }
+
+    .cv-container {
+        box-shadow: none;
+        border-radius: 0;
+        padding: 1rem;
+    }
+
+    .project-item a {
+        color: #1f2937;
+    }
+
+    .outreach-item a {
+        color: #1f2937;
+    }
 }
