@@ -1,1 +1,3 @@
 change from page to tabs that can be clicked
+make languages and tech stack tab look nicer
+add competitions tab for e.g. UKMT, foo:bar, hackathons etc.
