@@ -1,4 +1,8 @@
 change from page to tabs that can be clicked
 make languages and tech stack tab look nicer
-add competitions tab for e.g. UKMT, foo:bar, hackathons etc.
+add competitions tab for e.g. UKMT, foo:bar, hackathons etc. (done!)
+ - populate it with all the competitions. missing competitionsn: brunel hackathon 2025, biology challenge gold, cambridge chemistry challenge gold
+ - add styling for competition items
+
+
 make sure projects tab contains nn vis (done!)
