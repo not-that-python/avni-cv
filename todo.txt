@@ -4,4 +4,5 @@ add competitions tab for e.g. UKMT, foo:bar, hackathons etc. (done!)
  - populate it with all the competitions. missing competitionsn: brunel hackathon 2025, biology challenge gold, cambridge chemistry challenge gold
  - add styling for competition items
 
-- update with my a level results
+- update with my a level results (done!)
+- wait for premission from steve to link to trainio in my cv
