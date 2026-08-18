@@ -4,9 +4,4 @@ add competitions tab for e.g. UKMT, foo:bar, hackathons etc. (done!)
  - populate it with all the competitions. missing competitionsn: brunel hackathon 2025, biology challenge gold, cambridge chemistry challenge gold
  - add styling for competition items
 
-make sure projects tab contains nn vis (done!)
-
-add references (in progress)
-- waiting for sujit's permission and work number
-- waiting for clare hargreave's permission
-add contact details and location (done as it turns out)
+- update with my a level results
